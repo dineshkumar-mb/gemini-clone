@@ -1,5 +1,6 @@
 import { GoogleGenerativeAI, HarmCategory, HarmBlockThreshold } from "@google/generative-ai";
-const API_KEY = "AIzaSyDz82LSpgcJsl4e4Vz5dOLx6ZeX2lQs_O8"; // Replace with your actual API key
+require('dotenv').config();
+const API_KEY = import.meta.env.VITE_API_KEY || API_KEY; 
 const MODEL_NAME = "gemini-2.0-flash";
 const GENERATION_CONFIG = {
   temperature: 1,

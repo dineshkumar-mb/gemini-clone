@@ -1,12 +1,27 @@
-# React + Vite
+# 🚀 Gemini AI Clone  
+A powerful conversational AI web application built with **ReactJS**, **Tailwind CSS**, and **Google Generative AI**. This project aims to replicate the sleek and intuitive experience of Google's Gemini AI, delivering smart, contextual responses in real-time.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## 📸 Preview  
+![Gemini Clone Screenshot](path/to/screenshot.png)  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack  
+- **ReactJS** — For building the interactive UI  
+- **Tailwind CSS** — For modern styling and responsiveness  
+- **Google Generative AI** — For AI-powered conversational responses  
+- **Axios** — For handling API requests  
+- **Vercel/Netlify** — For seamless deployment  
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🎯 Features  
+✅ Clean and modern UI with Tailwind CSS  
+✅ Real-time AI-powered responses using Google Generative AI  
+✅ Dynamic message bubbles for user and AI messages  
+✅ Fully responsive design for mobile and desktop  
+✅ Loading indicators for better user experience  
+✅ Conversation history with timestamps  
+```

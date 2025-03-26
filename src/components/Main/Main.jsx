@@ -73,7 +73,7 @@ const Main = () => {
             </div>
         </div>
         <p className="bottom-info">
-            Gemini may display inaccurate info, including personal info
+            Gemini may display inaccurate info, including personal info.... 
         </p>
     </div>
 </div>

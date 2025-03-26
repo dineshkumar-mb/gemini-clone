@@ -115,6 +115,6 @@ const loadPrompt = async(prompt) =>{
 </div>
     </div>
   )
-}
+}  
 
 export default Sidebar;

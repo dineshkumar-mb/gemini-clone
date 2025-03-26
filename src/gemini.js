@@ -1,7 +1,8 @@
 import { GoogleGenerativeAI, HarmCategory, HarmBlockThreshold } from "@google/generative-ai";
-require('dotenv').config();
-const API_KEY = import.meta.env.VITE_API_KEY || API_KEY; 
+
+const API_KEY = import.meta.env.VITE_API_KEY || "YOUR_DEFAULT_API_KEY"; 
 const MODEL_NAME = "gemini-2.0-flash";
+
 const GENERATION_CONFIG = {
   temperature: 1,
   topP: 0.95,
@@ -17,17 +18,9 @@ const SAFETY_SETTINGS = [
   { category: HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT, threshold: HarmBlockThreshold.BLOCK_MEDIUM_AND_ABOVE },
 ];
 
-// Initialize Gemini
+// Initialize Gemini API
 const genAI = new GoogleGenerativeAI(API_KEY);
 const model = genAI.getGenerativeModel({ model: MODEL_NAME });
-
-/**
- * Sends a prompt to the Gemini API and handles streaming responses.
- *
- * @param {string} prompt - The user's input prompt.
- * @param {function} onChunkReceived - Callback function to handle each response chunk.
- * @returns {Promise<string>} - Promise resolving to "Stream complete" or an error message.
- */
 
 async function runChat(prompt, onChunkReceived) {
   try {
@@ -54,42 +47,3 @@ async function runChat(prompt, onChunkReceived) {
 }
 
 export default runChat;
-
-
-
-// import { GoogleGenerativeAI, HarmCategory, HarmBlockThreshold } from "@google/generative-ai";
-
-// const apiKey = "AIzaSyDz82LSpgcJsl4e4Vz5dOLx6ZeX2lQs_O8"; 
-// const genAI = new GoogleGenerativeAI(apiKey);
-
-// const model = genAI.getGenerativeModel({
-//   model: "gemini-2.0-flash",
-// });
-
-// const generationConfig = {
-//   temperature: 1,
-//   topP: 0.95,
-//   topK: 40,
-//   maxOutputTokens: 8192,
-//   responseMimeType: "text/plain",
-// };
-
-// async function runChat(prompt) {
-//   const chat = model.startChat({
-//     generationConfig,
-//     safetySettings,
-//     history: [
-//     ],
-//   });
-
-//   const result = await chat.sendMessage(prompt);
-//   const response = result.response;
-//   console.log(response.text());
-//   return response.text();
-
-// }
-
-// export default runChat;
-
-
-

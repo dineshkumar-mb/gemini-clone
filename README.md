@@ -4,7 +4,9 @@ A powerful conversational AI web application built with **ReactJS**, **Tailwind 
 ---
 
 ## 📸 Preview  
-![Gemini Clone Screenshot](path/to/screenshot.png)  
+![Gemini Clone Screenshot]![Screenshot 2025-03-26 134313](https://github.com/user-attachments/assets/a578e8e6-cbad-4d8b-a0bd-25c0fc36e04c)
+
+
 
 ---
 
@@ -24,4 +26,3 @@ A powerful conversational AI web application built with **ReactJS**, **Tailwind 
 ✅ Fully responsive design for mobile and desktop  
 ✅ Loading indicators for better user experience  
 ✅ Conversation history with timestamps  
-```

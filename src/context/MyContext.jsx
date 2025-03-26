@@ -1,8 +1,6 @@
 import { createContext, useState } from "react";
 import runChat from "../gemini.js";
-
 export const MyContext = createContext(null);
-
 export const MyContextProvider = ({ children }) => {
   const [input, setInput] = useState("");
   const [recentPrompt, setRecentPrompt] = useState("");
